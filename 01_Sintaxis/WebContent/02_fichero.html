@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Es mas comun trabajar con ficheros con la etiqueta LINK-->
+<link rel="stylesheet" href="css/ejemplo.css">
+<style type="text/css">
+p {
+/*
+Al poner text-align a "right"" hemos sobreescrito la que nos viene del fichero ejemplo.css
+que era "center"
+
+OJO, dependiendo de donde hayamos cargado el ficheor esto se nos presentará
+de distintas maneras
+Si cargamos el ficheor antes que la etiqueta style, la etiqueta sobreescribe
+al fichero.
+pero si cargamos el fichero despues de esta etiqueta, entonces el fichero 
+sobrescribe a la etiqueta
+*/
+	text-align: right;
+}
+</style>
+
+</head>
+<body>
+
+<p>Rojo y a la derecha</p>
+<!-- Si no pusieramos "center", se alinear a la derecha -->
+<p style="color:blue;text-align: center">Azul y centrado</p>
+<!-- 
+-->
+
+</body>
+</html>

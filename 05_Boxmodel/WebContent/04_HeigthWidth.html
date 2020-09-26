@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+/* Cuando establecemos el height y el width es SOLAMENTE del CONTENT area del boxmodel*/
+.normal {
+    height: 100px;
+    width: 500px;
+    background-color: powderblue;
+}
+
+.porcentaje {
+    height: 25%;
+    width: 25%;
+    background-color: cyan;
+}
+
+/* 	La diferencia principal con el .normal es que en el .normal si haces el navegador más pequeño 
+	(o tambien vista de un movil) apareceria una barras de scroll para desplazarlo
+	De esta manera, con max, seria el maximo que puede dar, y en caso de que el navegador se haga 
+	mas pequeño, esto tambien ser haria más pequeño
+	 */
+.maximo {
+    max-width: 500px;
+    height: 100px;
+    background-color: #FF0000;
+}
+</style>
+</head>
+<body>
+<div class="normal">Este div tiene una altura de 100px y una anchura de 500px</div>
+<br/>
+<div class="porcentaje">Este div va por porcentajes de 25%</div>
+<br/>
+<div class="maximo">Este div tiene una altura de 100px y una anchura de 500px (Como máximo, es adptativo)</div>
+</body>
+</html>

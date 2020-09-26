@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Tenemos tres tipos de selectores basicos -->
+<style type="text/css">
+/*Selectores de etiqueta*/
+p{
+	color: red;
+	text-align: center
+}
+
+/*Selectores de id*/
+#selectorId{
+	color: blue;
+}
+
+/*Selectores de clase, los mejores a nivel de rendimiento*/
+.selectorClase{
+	color: green;
+}
+
+/*Podemos combinarlos, selector de etiquetas h1 con class 'rojo'*/
+h1.rojo {
+	color:red;
+}
+
+h1.centrada{
+	text-align: center;
+}
+
+/*Podemos asociar varios selectores a un mismo bloque, separando por ','*/
+h2, h3 {
+	color : cyan;
+}
+
+</style>
+</head>
+<body>
+
+
+<p>hola</p>
+<p id="selectorId">hola</p>
+<p class="selectorClase">hola</p>
+<h4 class="selectorClase">hola</h4>
+<!-- Notese como las p se les aplica tanto el selector de etiqueta como el de clase e id  -->
+
+<h1>Etiqueta no afectada</h1>
+<h1 class="rojo">Etiqueta en rojo</h1>
+<h1 class="rojo centrada">Etiqueta en rojo y centrada</h1>
+
+<h2>Soy un h2 cyan</h2>
+<h3>Soy un h3 cyan</h3>
+</body>
+</html>

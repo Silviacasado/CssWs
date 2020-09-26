@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Podemos definir css en tres lugares
+1- Fichero css, css externos
+2- En la etiqueta style, css internos
+3- En el atributo style de la etiqueta html, css inlines
+
+ -->
+<style type="text/css">
+/*
+Esto es un comentario en css dentro de una etiqueta style 
+Una regla css consiste en un selector y un bloque de declaración
+Aqui el selector seria p, y el bloque de declaracion lo de dentro 
+de las llaves
+
+El selector nos dice a que elementos html queremos aplicar los estilos
+en este caso aplicamos para todas las etiquetas p
+
+El bloque le decimos los estilos que queremos aplicar, es una coleccion
+de propiedades(clave-valor) separadas por ';'', en este caso
+queremos que sea rojo y lo centre en la pantalla
+Sepa
+*/
+p {
+    color: red;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<p>Hola mundo</p>
+
+<p style="color:blue">Notese como coge el estilo de la etiqueta pero en azul(center)</p>
+
+</body>
+</html>
